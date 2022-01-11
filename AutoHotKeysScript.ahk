@@ -8,7 +8,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ^!t::
 Run, wt.exe
 
-
+;
 ; ***PARA CAMBIAR DE ESCRITORIO CON WIN + NUMBER O WIN + TAB***
 ; Globals
 DesktopCount = 2 ; Windows starts with 2 desktops at boot

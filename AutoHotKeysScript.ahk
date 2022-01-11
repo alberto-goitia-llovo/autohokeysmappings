@@ -4,12 +4,12 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
-; ***PARA ABRIR UNA TERMINAL CON CTRL+TAB***
+; ***OPENS TERMINAL WITH CTRL+ALT+T COMMAND***
 ^!t::
 Run, wt.exe
 
 ;
-; ***PARA CAMBIAR DE ESCRITORIO CON WIN + NUMBER O WIN + TAB***
+; ***SWITCHES DESKTOPS WITH WIN+NUMBER NUMBER OR WIN+TAB***
 ; Globals
 DesktopCount = 2 ; Windows starts with 2 desktops at boot
 CurrentDesktop = 1 ; Desktop count is 1-indexed (Microsoft numbers them this way)
@@ -101,6 +101,8 @@ switchDesktopByNumber(targetDesktop)
  OutputDebug, [left] target: %targetDesktop% current: %CurrentDesktop%
  }
 }
+
+; This function toggles desktops 1 and 2
 toggleDesktops1and2()
 {
  global CurrentDesktop, DesktopCount
